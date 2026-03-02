@@ -3,3 +3,14 @@
     --light-grey: var(--light-grey);
     --dark-orange: var(--dark-orange);
 }
+
+body {
+    background-color: var(--dark-grey);
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
