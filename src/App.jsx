@@ -15,9 +15,9 @@ function App() {
   const profiles = [
     {
       id: 1,
-      name: "Mark",
+      name: "Renz Victa",
       title: "Front-End develoepr",
-      bio: "I like to work with different front-end technologies and play video games."
+      bio: "I like to work with different front-end technologies and play basketball"
     },
   ];
   return (
