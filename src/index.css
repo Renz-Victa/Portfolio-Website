@@ -28,3 +28,9 @@ body {
     border-bottom: 4px solid var(--dark-orange);
     width: fit-content;
 }
+
+@media (min-width: 768px) {
+    .card {
+        width: 300px;
+    }
+}
