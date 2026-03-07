@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import './index.css'
 
 function Card({ name, title, bio }) {
@@ -35,3 +35,4 @@ function App() {
 }
 
 export default App
+
