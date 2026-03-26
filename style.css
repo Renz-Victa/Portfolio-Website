@@ -643,6 +643,8 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: auto;
 }
 
 .about-visual::before {
@@ -650,15 +652,6 @@ nav {
   position: absolute;
   inset: 0;
   background: radial-gradient(ellipse at 25% 75%, rgba(44, 110, 73, .18) 0%, transparent 60%);
-}
-
-.about-av-letters {
-  font-family: var(--font-d);
-  font-size: 130px;
-  font-weight: 700;
-  color: rgba(44, 110, 73, .1);
-  letter-spacing: -6px;
-  user-select: none;
 }
 
 .about-badge {
