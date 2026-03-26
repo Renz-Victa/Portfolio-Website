@@ -1,13 +1,366 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio-website</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Renz Victa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ══ NAV ══════════════════════════════════ -->
+  <nav>
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Renz</a>
+      <ul class="nav-links">
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact"><button class="btn btn-green" style="padding:10px 22px;font-size:13px;">Hire
+              Me</button></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ═════════════════════════════════ -->
+  <section id="hero">
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-badge">
+          <div class="hero-badge-dot"></div>
+          Available for new opportunities
+        </div>
+        <h1 class="hero-title">
+          Renz<br>
+          <em>Marlon</em><br>
+          Victa
+        </h1>
+        <p class="hero-sub">
+          Frontend Developer who loves pixel-perfect web experiences.
+          I turn complex ideas into clean interfaces that people love to use.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-green">View My Work →</a>
+          <a href="#contact" class="btn btn-outline">Let's Talk</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-card">
+          <div class="hero-card-topbar">
+            <div class="hc-dot"></div>
+            <div class="hc-dot"></div>
+            <div class="hc-dot"></div>
+            <div class="hc-addr">renzvicta.dev</div>
+          </div>
+          <div class="hero-card-body">
+            <div class="hcb-row">
+              <div class="hcb-avatar">AM</div>
+              <div>
+                <div class="hcb-name">Renz Victa</div>
+                <div class="hcb-title">Frontend Developer · East London</div>
+              </div>
+            </div>
+            <div class="hcb-skill-label">Skill Proficiency</div>
+            <div class="hcb-bar">
+              <div class="hcb-fill" style="width:95%"></div>
+            </div>
+            <div class="hcb-row-label"><span>HTML / CSS</span><span>95%</span></div>
+            <div class="hcb-bar">
+              <div class="hcb-fill" style="width:90%"></div>
+            </div>
+            <div class="hcb-row-label"><span>JavaScript / TypeScript</span><span>90%</span></div>
+            <div class="hcb-bar">
+              <div class="hcb-fill" style="width:88%"></div>
+            </div>
+            <div class="hcb-row-label" style="margin-bottom:0"><span>React / Next.js</span><span>88%</span></div>
+            <div class="hcb-tags">
+              <span class="hcb-tag green">Open to Work</span>
+              <span class="hcb-tag">Remote</span>
+              <span class="hcb-tag">Full-time</span>
+              <span class="hcb-tag">Freelance</span>
+            </div>
+            <div class="hcb-metric">
+              <div>
+                <div class="hcb-metric-label">Lighthouse Score</div>
+                <div class="hcb-metric-sub">Latest project average</div>
+              </div>
+              <div class="hcb-metric-val">90</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SKILLS ════════════════════════════════ -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-eyebrow"><span class="tag">Expertise</span></div>
+      <h2 class="section-head">What I bring<br><em style="font-style:italic;color:var(--green)">to the table...</em>
+      </h2>
+      <p class="section-sub">Deep expertise across the full frontend stack, from pixel-perfect markups to scalable
+        architectures.</p>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-card-icon">⬡</div>
+          <div class="skill-card-name">HTML &amp; CSS</div>
+          <div class="skill-card-desc">Semantic markup, modern CSS, animations and responsive layouts that work
+            everywhere.</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon">◈</div>
+          <div class="skill-card-name">JavaScript &amp; TypeScript</div>
+          <div class="skill-card-desc">ES2024+, async patterns, performance optimisation and zero-compromise type
+            safety.</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon">◎</div>
+          <div class="skill-card-name">React &amp; Angular</div>
+          <div class="skill-card-desc">Production-grade SPAs and frontend apps with SSR, React Server Components and
+            edge deployments.</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card-icon">⊕</div>
+          <div class="skill-card-name">Design Systems</div>
+          <div class="skill-card-desc">Component libraries, design tokens, accessibility and turning Figma designs into
+            code.</div>
+        </div>
+      </div>
+
+      <div class="tech-strip">
+        <span class="tech-pill">React</span>
+        <span class="tech-pill">Angular</span>
+        <span class="tech-pill">TypeScript</span>
+        <span class="tech-pill">Tailwind CSS</span>
+        <span class="tech-pill">HTML5</span>
+        <span class="tech-pill">CSS3</span>
+        <span class="tech-pill">Jest</span>
+        <span class="tech-pill">Unit Testing</span>
+        <span class="tech-pill">Rest APIs</span>
+        <span class="tech-pill">Git</span>
+        <span class="tech-pill">Vite</span>
+        <span class="tech-pill">Design Systems</span>
+        <span class="tech-pill">Figma</span>
+        <span class="tech-pill">Design Systems</span>
+        <span class="tech-pill">Figma</span>
+        <span class="tech-pill">npm</span>
+        <span class="tech-pill">Vercel</span>
+        <span class="tech-pill">Unit Testing</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══════════════════════════════════ -->
+  <section class="section section-alt" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div>
+          <div class="about-visual">
+            <div class="about-av-letters">RV</div>
+            <div class="about-badge">
+              <div class="about-badge-n">3<span style="font-size:18px;vertical-align:super">+</span></div>
+              <div class="about-badge-l">Months of Experience</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="section-eyebrow"><span class="tag">About Me</span></div>
+          <h2 class="section-head">See the<br><em style="font-style:italic;color:var(--green)">bigger picture.</em></h2>
+          <p class="section-sub">Hey, I'm Renz, a Frontend Developer based in East London, obsessed with design and
+            engineering.</p>
+
+          <div class="about-list">
+            <div class="about-list-item">
+              <div class="about-num">01</div>
+              <div class="about-item-text"><strong>Pixel-perfect:</strong> I translate Figma designs into code
+                with zero compromise on spacing or motion.</div>
+            </div>
+            <div class="about-list-item">
+              <div class="about-num">02</div>
+              <div class="about-item-text"><strong>Performance-first mindset:</strong> Every project targets a perfect
+                Lighthouse score. Speed is a feature, not an afterthought.</div>
+            </div>
+            <div class="about-list-item">
+              <div class="about-num">03</div>
+              <div class="about-item-text"><strong>Accessibility by default:</strong> WCAG 2.1 AA compliance, keyboard
+                navigation and screen reader support on every build.</div>
+            </div>
+            <div class="about-list-item">
+              <div class="about-num">04</div>
+              <div class="about-item-text"><strong>Collaboration:</strong> Comfortable teaming up with an entire
+                frontend team on a shared design system.</div>
+            </div>
+          </div>
+
+          <div style="margin-top:36px;display:flex;gap:14px;flex-wrap:wrap;">
+            <a href="#" class="btn btn-green">Download CV ↓</a>
+            <a href="#contact" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROJECTS ═══════════════════════════════ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="proj-header">
+        <div>
+          <div class="section-eyebrow"><span class="tag">Selected Work</span></div>
+          <h2 class="section-head" style="margin-bottom:0">Recent projects.</h2>
+        </div>
+        <a href="#" class="btn btn-outline">View All →</a>
+      </div>
+      <div class="proj-table-wrap">
+        <table class="proj-table">
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Stack</th>
+              <th>Description</th>
+              <th>Link</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>SaaS Dashboard</td>
+              <td>
+                <div class="proj-tag-list"><span class="proj-tag">Tailwind CSS</span><span
+                    class="proj-tag">JavaScript</span><span class="proj-tag">HTML</span></div>
+              </td>
+              <td>Real-time analytics platform for e-commerce. 12K MAU, sub-100ms loads.</td>
+              <td><a href="#" class="proj-link">Live Demo →</a></td>
+            </tr>
+            <tr>
+              <td>Live FX Conversion Tool</td>
+              <td>
+                <div class="proj-tag-list"><span class="proj-tag">React</span><span class="proj-tag">CSS</span><span
+                    class="proj-tag">HTML</span></div>
+              </td>
+              <td>Headless CMS portfolio platform for agencies. Perfect 100 Lighthouse score.</td>
+              <td><a href="#" class="proj-link">Live Demo →</a></td>
+            </tr>
+            <tr>
+              <td>Real Time Weather Platfomr</td>
+              <td>
+                <div class="proj-tag-list"><span class="proj-tag">JavaScript</span><span
+                    class="proj-tag">CSS</span><span class="proj-tag">HTML</span></div>
+              </td>
+              <td>Real-time project management with drag-and-drop and offline-first sync via IndexedDB.</td>
+              <td><a href="#" class="proj-link">Live Demo →</a></td>
+            </tr>
+            <tr>
+              <td>UI Component Library</td>
+              <td>
+                <div class="proj-tag-list"><span class="proj-tag">TypeScript</span><span class="proj-tag">Tailwind
+                    CSS</span></div>
+              </td>
+              <td>Open-source accessible component library with 800+ GitHub stars.</td>
+              <td><a href="#" class="proj-link">GitHub →</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EXPERIENCE ═════════════════════════════ -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+      <div class="exp-grid">
+        <div class="exp-sticky">
+          <div class="section-eyebrow"><span class="tag">Career</span></div>
+          <h2 class="section-head">Work<br><em style="font-style:italic;color:var(--green)">history.</em></h2>
+          <p class="section-sub">Building things that matter, so companies can ship fast.</p>
+          <div style="margin-top:32px;">
+            <a href="#" class="btn btn-green">Download Full CV ↓</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="exp-item">
+            <div class="exp-period">February 2026 — Present · Freelance</div>
+            <div class="exp-role">Frontend Developer</div>
+            <div class="exp-company">Upwork · Virtual</div>
+            <p class="exp-desc">Lead UI development for the dashboard team, collaborating with design and platform
+              engineering to ship developer experience features used by 3M+ developers globally.</p>
+            <div class="exp-achievements">
+              <div class="exp-ach">Reduced initial bundle size by 42% through code splitting and tree shaking</div>
+              <div class="exp-ach">Built and maintained a shared component library used across 6 product teams</div>
+              <div class="exp-ach">Mentored 3 junior developers through pair programming and weekly code reviews</div>
+              <div class="exp-ach">Achieved a 90/100 Lighthouse performance score across all public-facing pages</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ════════════════════════════════ -->
+  <section id="contact">
+    <div class="contact-bg"></div>
+    <div class="contact-inner">
+      <div>
+        <h2 class="contact-head">Let's build<br><em>something</em><br>great.</h2>
+        <p class="contact-note">Whether you have a project in mind, a role to fill, or just want to say hello, my inbox
+          is always open. I always reply within 24 hours.</p>
+        <div style="margin-top:36px;">
+          <a href="mailto:victarenz472@gmail.com" class="btn"
+            style="background:#fff;color:var(--green);font-weight:600;">Send
+            a Message →</a>
+        </div>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:victarenz472@gmail.com" class="clink">
+          <div>
+            <div class="clink-label">Email</div>
+            <div class="clink-val">victarenz472@gmail.com</div>
+          </div>
+          <div class="clink-arrow">↗</div>
+        </a>
+        <a href="https://www.linkedin.com/in/renz-victa/" target="_blank" class="clink">
+          <div>
+            <div class="clink-label">LinkedIn</div>
+            <div class="clink-val">Renz Victa</div>
+          </div>
+          <div class="clink-arrow">↗</div>
+        </a>
+        <a href="https://github.com/Renz-Victa" target="_blank" class="clink">
+          <div>
+            <div class="clink-label">GitHub</div>
+            <div class="clink-val">@Renz-Victa</div>
+          </div>
+          <div class="clink-arrow">↗</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ═════════════════════════════════ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Renz</div>
+      <div class="footer-links">
+        <a href="#skills" class="footer-link">Skills</a>
+        <a href="#about" class="footer-link">About</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="#experience" class="footer-link">Experience</a>
+        <a href="#contact" class="footer-link">Contact</a>
+      </div>
+      <div class="footer-copy">© Renz Victa 2026 | All Rights Reserved</div>
+    </div>
+  </footer>
+
+</body>
+
 </html>
