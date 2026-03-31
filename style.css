@@ -486,20 +486,27 @@ nav {
   margin: 50px;
 }
 
+.exp-sticky .section-sub {
+  text-align: center;
+  max-width: 520px;
+}
+
+.exp-sticky {
+  margin-bottom: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 /* ═══════════════════════════════════════
        WORK EXPERIENCE
     ═══════════════════════════════════════ */
 .exp-grid {
-  display: grid;
-  grid-template-columns: 5fr 7fr;
-  gap: 80px;
-  align-items: start;
-}
-
-.exp-sticky {
-  position: sticky;
-  top: calc(var(--nav-h) + 32px);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .exp-item {
@@ -736,17 +743,6 @@ footer {
        RESPONSIVE
     ═══════════════════════════════════════ */
 @media (max-width: 960px) {
-  .hero-inner {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-right {
-    display: none;
-  }
-
-  .hero-left {
-    padding-bottom: 60px;
-  }
 
   .about-grid {
     grid-template-columns: 1fr;
@@ -754,14 +750,6 @@ footer {
 
   .about-visual {
     max-width: 380px;
-  }
-
-  .exp-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .exp-sticky {
-    position: static;
   }
 
   .contact-inner {
@@ -796,10 +784,6 @@ footer {
   .nav-inner {
     padding: 0 20px;
   }
-
-  .hero-inner {
-    padding: 60px 20px 0;
-  }
 }
 
 @media (max-width: 600px) {
@@ -809,10 +793,5 @@ footer {
 
   .trusted-logos {
     gap: 20px;
-  }
-
-  .hero-stats {
-    gap: 28px;
-    flex-wrap: wrap;
   }
 }
