@@ -484,11 +484,47 @@ nav {
   font-size: 13px;
   font-weight: 500;
   color: var(--green);
-  transition: gap .2s;
+  transition: gap 0.2s, color 0.2s ease, opacity 0.2s ease;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: gap 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
 }
 
 .proj-link:hover {
   gap: 9px;
+  opacity: 0.8;
+  border-bottom-color: var(--green);
+}
+
+.proj-link:hover {
+  gap: 9px;
+  opacity: 0.8;
+  border-bottom-color: var(--green);
+}
+
+.proj-link-src {
+  color: var(--ink-soft);
+}
+
+.proj-link-src:hover {
+  color: var(--ink);
+  opacity: 1;
+  border-bottom-color: var(--ink);
+}
+
+.proj-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.proj-header {
+  margin: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* ═══════════════════════════════════════
